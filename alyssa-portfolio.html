@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio-Alyssa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="alyssa-portfolio2.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+    <a href="#home" class="nav-logo">Alyssa</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:20px;">
+      <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">🌙</button>
+      <a href="#contact" class="nav-cta">Let's Talk ↗</a>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="hero-left">
+      <h1 class="hero-greeting">Hello,<br><em>I'm</em><br>Alyssa.</h1>
+      <p class="hero-subtitle">
+        <span>Determine, Curious, and Enthusiastic.</span>
+      </p>
+      <div class="hero-scroll">
+        <span class="scroll-line"></span>
+        Scroll down
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-photo-wrap">
+        <img src="C:\Users\jkhay\Downloads\photo-light.jpg" alt="Alyssa" class="hero-photo hero-photo--light">
+        <img src="C:\Users\jkhay\Downloads\photo-dark.jpg"  alt="Alyssa" class="hero-photo hero-photo--dark">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-head reveal">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Designing<br>with purpose<br>&amp; passion.</h2>
+    </div>
+    <div class="about-body reveal">
+      <p>Hi! I'm Alyssa, a UX Designer with a deep love for arts and crafts interfaces that don't just look good — they feel right. I believe great design is invisible, it guides, delights, and empowers without getting in the way.</p>
+      <p>I'm someone who's always eager to learn whether it's picking up a new skill, diving into an interesting topic, or just figuring out how things work. I love the feeling of growth that comes with learning something new, and I'm excited to see where that curiosity takes me.</p>
+      <p>I'm currently studying information technology at western institute of technology, exploring my college life, and finding unexpected inspiration in everyday life.</p>
+      <div class="skills-grid">
+        <div class="skill-chip">UX Designer</div>
+        <div class="skill-chip">UI Design</div>
+        <div class="skill-chip">Wireframing</div>
+        <div class="skill-chip">Prototyping</div>
+        <div class="skill-chip">Figma</div>
+        <div class="skill-chip">work etiquette</div>
+        <div class="skill-chip">Graphic Designer</div>
+        <div class="skill-chip">Drawing</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="work-header reveal">
+      <div>
+        <h2 class="section-title">Recent Projects.</h2>
+      </div>
+      <span class="work-count">03 projects</span>
+    </div>
+    <div class="projects-list">
+      <div class="project-item reveal">
+        <span class="project-num">01</span>
+        <div class="proj-info">
+          <div class="proj-title">AWESOMETODOS</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Productivity</span>
+            <span class="proj-tag">UI Design</span>
+            <span class="proj-tag">Notion</span>
+          </div>
+        </div>
+        <span class="proj-arrow">↗</span>
+      </div>
+      <div class="project-item reveal">
+        <span class="project-num">02</span>
+        <div class="proj-info">
+          <div class="proj-title">UI Design Challenge</div>
+          <div class="proj-tags">
+            <span class="proj-tag">UI Design</span>
+            <span class="proj-tag">Challenge</span>
+            <span class="proj-tag">Figma</span>
+          </div>
+        </div>
+        <span class="proj-arrow">↗</span>
+      </div>
+      <div class="project-item reveal">
+        <span class="project-num">03</span>
+        <div class="proj-info">
+          <div class="proj-title">Group Project Study</div>
+          <div class="proj-tags">
+            <span class="proj-tag">UX Research</span>
+            <span class="proj-tag">Collaboration</span>
+            <span class="proj-tag">Case Study</span>
+          </div>
+        </div>
+        <span class="proj-arrow">↗</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-left reveal">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Let's create something great.</h2>
+      <p class="contact-desc">Whether you have a project in mind, a question, or just want to say hello — I'd love to hear from you.</p>
+      <a href="mailto:jhodiealyssa.0131@gmail.com" class="contact-email">jhodiealyssa.0131@gmail.com</a>
+    </div>
+    <form class="contact-form reveal" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="ce8583a7-7c37-4f15-8923-9237535c4dcf">
+      <input type="hidden" name="subject" value="New message from your Portfolio!">
+      <input type="hidden" name="redirect" value="https://web3forms.com/success">
+      <div class="form-field">
+        <label>Your Name</label>
+        <input type="text" name="name" placeholder="Your full name" required>
+      </div>
+      <div class="form-field">
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="your@email.com" required>
+      </div>
+      <div class="form-field">
+        <label>Message</label>
+        <textarea name="message" placeholder="Tell me about your thoughts..." required></textarea>
+      </div>
+      <button class="btn-submit" type="submit">
+        <span>Send Message →</span>
+      </button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Portfolio</div>
+    <span class="footer-copy"> 2026 — UX Designer Portfolio</span>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/share/1CTwttcpP9/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/shisuiij_?igsh=MWVuZ29zOGhsdGk4Yg" target="_blank">Instagram</a>
+       <a href="https://github.com/Alyszaqwer" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/jhodie-alyssa-ladran-a355003b8/" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    var cursor = document.getElementById('cursor');
+    var ring = document.getElementById('cursorRing');
+    var mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', function(e) {
+      mx = e.clientX;
+      my = e.clientY;
+      cursor.style.left = mx + 'px';
+      cursor.style.top = my + 'px';
+    });
+
+    function animateRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = rx + 'px';
+      ring.style.top = ry + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+
+    document.querySelectorAll('a, button, .project-item, .skill-chip').forEach(function(el) {
+      el.addEventListener('mouseenter', function() {
+        ring.style.width = '60px';
+        ring.style.height = '60px';
+        ring.style.opacity = '0.3';
+        ring.style.borderColor = 'var(--accent)';
+      });
+      el.addEventListener('mouseleave', function() {
+        ring.style.width = '36px';
+        ring.style.height = '36px';
+        ring.style.opacity = '0.5';
+        ring.style.borderColor = 'var(--dark)';
+      });
+    });
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          setTimeout(function() {
+            entry.target.classList.add('visible');
+          }, 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(function(el) {
+      observer.observe(el);
+    });
+
+    document.querySelectorAll('.projects-list .project-item').forEach(function(el, i) {
+      el.style.transitionDelay = (i * 0.08) + 's';
+    });
+
+    var toggleBtn = document.getElementById('themeToggle');
+    var htmlEl = document.documentElement;
+
+    if (localStorage.getItem('theme') === 'dark') {
+      htmlEl.setAttribute('data-theme', 'dark');
+      toggleBtn.textContent = '\u2600\uFE0F';
+    }
+
+    toggleBtn.addEventListener('click', function() {
+      var isDark = htmlEl.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        htmlEl.removeAttribute('data-theme');
+        toggleBtn.textContent = '\uD83C\uDF19';
+        localStorage.setItem('theme', 'light');
+      } else {
+        htmlEl.setAttribute('data-theme', 'dark');
+        toggleBtn.textContent = '\u2600\uFE0F';
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  </script>
+
+</body>
+</html>
